@@ -21,7 +21,7 @@ import psycopg2
 
 # Loading and cleaning data
 #df = pd.read_csv('D:\dash-ece-app-master\ECE_copy.csv')
-df = pd.read_csv('use.csv')
+df = pd.read_csv('ECE_copy.csv')
 '''
 host="ec2-174-129-227-80.compute-1.amazonaws.com"
 db="d6kqslcuso8lr"
