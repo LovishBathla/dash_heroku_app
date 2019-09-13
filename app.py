@@ -22,16 +22,18 @@ import psycopg2
 # Loading and cleaning data
 #df = pd.read_csv('D:\dash-ece-app-master\ECE_copy.csv')
 #df = pd.read_csv('D:\dash-ece-app-master\ECE_copy.csv')
-'''
+
 host="ec2-174-129-227-80.compute-1.amazonaws.com"
 db="d6kqslcuso8lr"
 us="bnwycizeyrtlgn"
 pwd="8d207872efa476ea7e3f9ae0bc23045fe114ae3ac4b67956b7e3d754a5632d3e"
+#db = psycopg2.connect(host=host,database=db, user=us, password=pwd , port=5432)
 db = psycopg2.connect(host=host,database=db, user=us, password=pwd , port=5432)
 '''
 DATABASE_URL = os.environ['DATABASE_URL']
 
 db = psycopg2.connect(DATABASE_URL, sslmode='require')
+'''
 query = "SELECT * FROM data;"
 
 df = pd.read_sql(query, db)
