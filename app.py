@@ -23,7 +23,7 @@ app = dash.Dash(__name__,external_stylesheets =external_stylesheets )
 
 server = app.server
 # Loading and cleaning data
-df = pd.read_csv('ECE_copy.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/LovishBathla/dash_heroku_app/master/ECE.csv',dtype=object)
 
 # Estandarizando el tipo de los datos
 for i in df.columns:
