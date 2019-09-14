@@ -23,7 +23,7 @@ app = dash.Dash(__name__,external_stylesheets =external_stylesheets )
 
 server = app.server
 # Loading and cleaning data
-df = pd.read_csv('ECE.csv',low_memory=False)
+df = pd.read_csv('ECE_copy.csv')
 
 # Estandarizando el tipo de los datos
 for i in df.columns:
