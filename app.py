@@ -1,6 +1,3 @@
-import dash
-import dash_html_components as html
-import dash_core_components as dcc
 import time
 
 from dash.dependencies import Input, Output
