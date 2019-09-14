@@ -39,7 +39,7 @@ df['trimestre'] = df['trimestre'].astype(str)
     
     
     
-   '''
+ 
 # MAPPING VALUES:
 
  #1 ED01
@@ -411,9 +411,7 @@ df['D04'] = df['D04'].map(di26)
 #39 Tuvo trabajo secundario en la semana pasada?
 df['B23'] = df['B23'].map(di26)
 
-'''
-
-  
+ 
     
 # List of variables for second dropdown
 drop_dict = {'RECB01':'Ocupación principal',
