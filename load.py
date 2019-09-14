@@ -4,7 +4,7 @@ import numpy as np
 
 def load_data():
 
-    df = pd.read_csv('D:\dash-ece-app-master\ECE_copy.csv',low_memory=False)
+    df = pd.read_csv('ECE_copy.csv',low_memory=False)
 
     # Estandarizando el tipo de los datos
     for i in df.columns:
