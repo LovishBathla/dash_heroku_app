@@ -19,7 +19,7 @@ import flask as flask
 ##################################################
 
 # Loading and cleaning data
-df = pd.read_csv('ECE.csv',low_memory=False)
+df = pd.read_csv('ECE.csv',low_memory=False,chunksize=10000)
 
 # Estandarizando el tipo de los datos
 for i in df.columns:
