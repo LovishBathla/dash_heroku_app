@@ -23,7 +23,7 @@ app = dash.Dash(__name__,external_stylesheets =external_stylesheets )
 
 server = app.server
 # Loading and cleaning data
-df = pd.read_csv('https://raw.githubusercontent.com/LovishBathla/dash_heroku_app/master/ECE.csv',dtype=object)
+df = pd.read_csv('https://raw.githubusercontent.com/LovishBathla/dash_heroku_app/master/ECE_copy.csv',dtype=object)
 
 # Estandarizando el tipo de los datos
 for i in df.columns:
@@ -39,7 +39,7 @@ df['trimestre'] = df['trimestre'].astype(str)
     
     
     
-    
+   '''
 # MAPPING VALUES:
 
  #1 ED01
@@ -411,7 +411,7 @@ df['D04'] = df['D04'].map(di26)
 #39 Tuvo trabajo secundario en la semana pasada?
 df['B23'] = df['B23'].map(di26)
 
-
+'''
 
   
     
