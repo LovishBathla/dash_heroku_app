@@ -18,8 +18,12 @@ import flask as flask
 # Data Manipulation
 ##################################################
 
+external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
+app = dash.Dash(__name__,external_stylesheets =external_stylesheets )
+
+server = app.server
 # Loading and cleaning data
-df = pd.read_csv('ECE.csv',low_memory=False,chunksize=10000)
+df = pd.read_csv('ECE_copy.csv',low_memory=False)
 
 # Estandarizando el tipo de los datos
 for i in df.columns:
@@ -495,10 +499,9 @@ def generate_pv(frame, variable):
 
 
 
-external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
-app = dash.Dash(__name__,external_stylesheets =external_stylesheets )
 
-server = app.server 
+
+ 
 
 
 colors = {
